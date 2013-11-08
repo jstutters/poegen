@@ -3,19 +3,6 @@ import random
 from collections import defaultdict
 
 
-def make_limerick():
-    pass
-
-def rhyming_pair():
-    """CMU pronouncing dictionary"""
-    pass
-
-def random_place():
-    pass
-
-def random_thing():
-    pass
-
 class CMUDict:
     def __init__(self):
         self.cmup = CMUPhones()
@@ -23,7 +10,6 @@ class CMUDict:
 
     def read_from_file(self):
         with open('cmudict.0.7a') as f:
-            all_phonemes = []
             self.word_table = {}
             for l in f:
                 l = l.strip()
